@@ -248,6 +248,8 @@
 //a2 b2 c2 d2 e2 f2 g2           +2      2  3  4  5  6  7  8  9
 //a1 b1 c1 d1 e1 f1 g1           + 1     1  2  3  4  5  6  7  8
 
+
+
 //task32
 
 // function solution(a) {
@@ -447,3 +449,44 @@
 // }
 
 // console.log(solution(8897));
+
+
+// task 42
+  // version from google
+// function solution(bishop, pawn) {
+ 
+//     var bishopCoords = bishop.split("");
+//     var pawnCoords = pawn.split("");
+//     bishopCoords[0] = 1 + bishopCoords[0].charCodeAt(0) - "a".charCodeAt(0);
+//     bishopCoords[1] = Number(bishopCoords[1]);
+//     pawnCoords[0] = 1 + pawnCoords[0].charCodeAt(0) - "a".charCodeAt(0);
+//     pawnCoords[1] = Number(pawnCoords[1]);
+//     return (
+//       bishopCoords[0] - bishopCoords[1] === pawnCoords[0] - pawnCoords[1] ||
+//       bishopCoords[0] + bishopCoords[1] === pawnCoords[0] + pawnCoords[1]
+//     );
+//   }
+
+//   let result = solution("a1","b2");
+//   console.log(result);
+
+// version from goog change by me
+// function solution(bishop, pawn) {
+ 
+//   let bishopCoords = bishop.split("");
+//   let pawnCoords = pawn.split("");
+//   bishopCoords[0] =  bishopCoords[0].charCodeAt(0);
+//   bishopCoords[1] = Number(bishopCoords[1]);
+//   pawnCoords[0] =  pawnCoords[0].charCodeAt(0);
+//   pawnCoords[1] = Number(pawnCoords[1]);
+//   return (
+//     bishopCoords[0] - bishopCoords[1] === pawnCoords[0] - pawnCoords[1] ||
+//     bishopCoords[0] + bishopCoords[1] === pawnCoords[0] + pawnCoords[1]
+//   );
+// }
+
+
+
+
+
+
